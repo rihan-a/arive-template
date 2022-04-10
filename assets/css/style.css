@@ -247,7 +247,7 @@ label {
 .cover-area .cover-title h2 {
   width: 70%;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   margin-top: 2.5rem;
 }
@@ -296,7 +296,7 @@ label {
     width: 100%;
     height: 30%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
     margin: 0;
@@ -315,7 +315,7 @@ label {
   .cover-area .cover-img {
     width: 60%;
     position: absolute;
-    top: 250px;
+    top: 270px;
     left: 50%;
     transform: translate(-50%, 10%);
   }
@@ -326,15 +326,38 @@ label {
 
   .cover-area .btn {
     height: 20%;
+    width: 90%;
     position: absolute;
     left: 50%;
-    top: 260px;
+    top: 190px;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
+
   .cover-area .btn a {
     display: block;
+    width: 30%;
+    margin: auto;
     margin-top: 15%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 757px) {
+  .cover-area .cover-title {
+    justify-content: flex-end;
+  }
+
+  .cover-area .cover-img {
+    top: 250px;
+  }
+
+  .cover-area .btn {
+    top: 260px;
+  }
+
+  .cover-area .btn a {
+    width: 50%;
   }
 }
 
@@ -345,8 +368,8 @@ label {
   }
 
   .cover-area .cover-title {
-    padding: 2rem 0;
-    width: 98%;
+    padding: 0;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -356,26 +379,29 @@ label {
   }
 
   .cover-area .cover-title h2 {
-    width: 100%;
-    font-size: 1.5rem;
+    width: 80%;
+    font-size: 2.2rem;
     text-align: center;
   }
 
   .cover-area .cover-title h1 {
-    width: 100%;
-    font-size: 2rem;
+    width: 80%;
+    font-size: 2.8rem;
     text-align: center;
   }
+
   .cover-area .cover-img {
-    top: 60%;
+    top: 65%;
     width: 70%;
   }
 
   .cover-area .btn {
-    top: 45%;
+    top: 50%;
+    width: 90%;
   }
   .cover-area .btn a {
     padding: 0.75rem 1rem;
+    font-size: 1rem;
   }
 }
 
