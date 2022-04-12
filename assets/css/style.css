@@ -670,13 +670,10 @@ label {
 }
 
 @media (max-width: 575px) {
-  .container {
-    width: 90%;
-  }
-
   .welcome-desc {
     width: 100%;
     height: 50%;
+    margin-bottom: 3rem;
   }
 
   .welcome-area .welcome-card {
