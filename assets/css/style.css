@@ -21,6 +21,11 @@
   padding: 3.5rem 0;
 }
 
+.container {
+  width: 85%;
+  margin: auto;
+}
+
 .btn {
   transition: all 0.2s ease-in;
   cursor: pointer;
@@ -408,7 +413,7 @@ label {
 /* ======== End cover area =========== */
 /* ======== Start brands animation area =========== */
 .brands-wrapper {
-  margin: 2rem auto;
+  margin: 5rem auto;
   overflow: hidden;
 }
 
@@ -423,17 +428,206 @@ label {
 
 @media (max-width: 991px) {
   .brands-wrapper {
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
 
   .cover-area .cover-brands img {
     width: 20%;
   }
 }
-
 @media (max-width: 575px) {
   .cover-area .cover-brands {
     display: none;
   }
+  .brands-wrapper {
+    margin: 3.5rem auto;
+  }
 }
 /* ======== End brands animation area =========== */
+
+/* =========== Start welcome area ========== */
+.welcome-area {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-area .welcome-card {
+  position: relative;
+  width: 65%;
+  height: 100%;
+}
+
+.welcome-area .welcome-card img:nth-child(1) {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 99;
+  width: 50%;
+}
+
+.welcome-area .welcome-card img:nth-child(2) {
+  position: absolute;
+  top: 150px;
+  right: 25px;
+  z-index: 999;
+  height: 50%;
+}
+
+.welcome-area .welcome-card img:nth-child(3) {
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+  z-index: 999;
+  width: 40%;
+}
+
+.welcome-desc {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-desc h3 {
+  width: 85%;
+  font-size: 2rem;
+  color: var(--lightblue01);
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+.welcome-desc h2 {
+  width: 85%;
+  font-size: 3.5rem;
+  color: black;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.welcome-desc p {
+  width: 85%;
+  color: #747474;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .welcome-area {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome-card {
+    width: 95%;
+    height: 60%;
+    order: 2;
+  }
+
+  .welcome-desc {
+    width: 95%;
+    height: 30%;
+  }
+
+  .welcome-desc h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .welcome-desc h2 {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .welcome-desc p {
+    margin-top: 2rem;
+    text-align: center;
+    width: 95%;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
+
+  .welcome-desc {
+    width: 100%;
+    height: 50%;
+  }
+
+  .welcome-area .welcome-card {
+    width: 100%;
+    height: 65%;
+  }
+
+  .welcome-desc h3 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-desc h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .welcome-desc p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .welcome-area .welcome-card img:nth-child(1) {
+    top: 0px;
+    left: 0;
+    width: 60%;
+  }
+
+  .welcome-area .welcome-card img:nth-child(2) {
+    top: 100px;
+    right: 0;
+    height: 40%;
+  }
+
+  .welcome-area .welcome-card img:nth-child(3) {
+    bottom: 30px;
+    left: 55px;
+    width: 60%;
+  }
+}
+
+/* =========== End welcome area =========== */
+
+/* =========== Start what we do area ======== */
+
+.whatwedo-area {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.whatwedo-desc {
+  width: 45%;
+  height: 100%;
+}
+
+.whatwedo-img {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatwedo-img img {
+  width: 100%;
+}
