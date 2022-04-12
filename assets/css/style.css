@@ -631,3 +631,70 @@ label {
 .whatwedo-img img {
   width: 100%;
 }
+
+@media (max-width: 991px) {
+  .whatwedo-area {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whatwedo-img {
+    width: 95%;
+    height: 60%;
+  }
+
+  .welcome-desc {
+    width: 95%;
+    height: 30%;
+  }
+
+  .welcome-desc h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .welcome-desc h2 {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .welcome-desc p {
+    margin-top: 2rem;
+    text-align: center;
+    width: 95%;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
+
+  .welcome-desc {
+    width: 100%;
+    height: 50%;
+  }
+
+  .welcome-area .welcome-card {
+    width: 100%;
+    height: 65%;
+  }
+
+  .welcome-desc h3 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-desc h2 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+  .welcome-desc p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
