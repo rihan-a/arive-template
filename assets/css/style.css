@@ -678,6 +678,8 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 3rem;
   }
 
   .whatwedo-img {
@@ -853,9 +855,9 @@ label {
   }
 
   .promises-cards .card {
-    height: 60%;
+    height: 450px;
     padding: 25px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .promises-cards .card p {
