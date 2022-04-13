@@ -455,7 +455,7 @@ label {
     display: none;
   }
   .brands-wrapper {
-    margin: 3.5rem auto;
+    margin: 5.5rem auto;
   }
 }
 /* ======== End brands animation area =========== */
@@ -485,14 +485,14 @@ label {
 .welcome-area .welcome-card img:nth-child(2) {
   position: absolute;
   top: 150px;
-  right: 25px;
+  right: 55px;
   z-index: 999;
   height: 50%;
 }
 
 .welcome-area .welcome-card img:nth-child(3) {
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   left: 150px;
   z-index: 999;
   width: 40%;
@@ -534,21 +534,20 @@ label {
 
 @media (max-width: 991px) {
   .welcome-area {
-    height: 120vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
-  .welcome-card {
-    width: 95%;
+  .welcome-area .welcome-card {
+    width: 100%;
     height: 60%;
     order: 2;
   }
 
-  .welcome-desc {
-    width: 95%;
+  .welcome-area .welcome-desc {
+    width: 100%;
     height: 30%;
   }
 
@@ -566,7 +565,31 @@ label {
   .welcome-desc p {
     margin-top: 2rem;
     text-align: center;
-    width: 95%;
+    width: 100%;
+  }
+
+  .welcome-area .welcome-card img:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 99;
+    width: 60%;
+  }
+
+  .welcome-area .welcome-card img:nth-child(2) {
+    position: absolute;
+    top: 260px;
+    right: 0px;
+    z-index: 999;
+    height: 45%;
+  }
+
+  .welcome-area .welcome-card img:nth-child(3) {
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+    z-index: 999;
+    width: 40%;
   }
 }
 
@@ -606,13 +629,13 @@ label {
   }
 
   .welcome-area .welcome-card img:nth-child(2) {
-    top: 100px;
+    top: 150px;
     right: 0;
-    height: 40%;
+    height: 43%;
   }
 
   .welcome-area .welcome-card img:nth-child(3) {
-    bottom: 30px;
+    bottom: 20px;
     left: 55px;
     width: 60%;
   }
@@ -623,7 +646,7 @@ label {
 /* =========== Start what we do area ======== */
 
 .whatwedo-area {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -633,7 +656,7 @@ label {
 
 .whatwedo-desc {
   width: 45%;
-  height: 100%;
+  height: 40%;
 }
 
 .whatwedo-img {
@@ -650,7 +673,7 @@ label {
 
 @media (max-width: 991px) {
   .whatwedo-area {
-    height: 120vh;
+    height: 140vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -658,13 +681,13 @@ label {
   }
 
   .whatwedo-img {
-    width: 95%;
+    width: 100%;
     height: 60%;
+    margin-top: 2rem;
   }
 
   .welcome-desc {
     width: 95%;
-    height: 30%;
   }
 
   .welcome-desc h3 {
@@ -753,7 +776,7 @@ label {
 
 .promises-cards .card {
   width: 31%;
-  height: 90%;
+  height: 85%;
   padding: 35px;
   border-radius: 15px;
   display: flex;
@@ -782,6 +805,7 @@ label {
 }
 
 .promises-cards .card p {
+  height: 260px;
   width: 85%;
   color: #747474;
   line-height: 1.5;
