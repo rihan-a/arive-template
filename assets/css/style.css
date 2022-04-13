@@ -508,7 +508,7 @@ label {
 }
 
 .welcome-desc h3 {
-  width: 85%;
+  width: 100%;
   font-size: 2rem;
   color: var(--lightblue01);
   font-weight: 500;
@@ -516,7 +516,7 @@ label {
 }
 
 .welcome-desc h2 {
-  width: 85%;
+  width: 100;
   font-size: 3.5rem;
   color: black;
   font-weight: 600;
@@ -524,7 +524,7 @@ label {
 }
 
 .welcome-desc p {
-  width: 85%;
+  width: 100%;
   color: #747474;
   line-height: 1.5;
   font-weight: 300;
@@ -628,6 +628,7 @@ label {
   justify-content: space-between;
   align-items: center;
   margin-top: 6rem;
+  margin-bottom: 7rem;
 }
 
 .whatwedo-desc {
@@ -708,5 +709,128 @@ label {
     font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+}
+
+/* =========== End what we do area ======== */
+
+/* =========== Start promises area ========= */
+.promises-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 110vh;
+}
+
+.promises-desc {
+  height: 25%;
+  width: 100%;
+}
+.promises-desc h3 {
+  margin: auto;
+  font-size: 2rem;
+  color: var(--lightblue01);
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+.promises-desc h2 {
+  margin: auto;
+  font-size: 3.5rem;
+  color: black;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.promises-cards {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promises-cards .card {
+  width: 31%;
+  height: 90%;
+  padding: 35px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--lightblue04);
+}
+
+.promises-cards .card h3 {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  background-color: var(--lightblue01);
+  text-align: center;
+}
+
+.promises-cards .card h4 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+}
+
+.promises-cards .card p {
+  width: 85%;
+  color: #747474;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin-top: 1.125rem;
+}
+
+@media (max-width: 991px) {
+  .promises-cards {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .promises-cards .card {
+    width: 100%;
+    height: 30%;
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .promises-desc h3 {
+    text-align: center;
+  }
+
+  .promises-desc h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .promises-desc h3 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  .promises-desc h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .promises-cards .card {
+    height: 50%;
+    padding: 25px;
+    margin-bottom: 2rem;
+  }
+
+  .promises-cards .card p {
+    width: 100%;
   }
 }
