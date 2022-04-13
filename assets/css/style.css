@@ -744,6 +744,7 @@ label {
   justify-content: space-around;
   align-items: center;
   height: 110vh;
+  background-color: lawngreen;
 }
 
 .promises-desc {
@@ -815,6 +816,10 @@ label {
 }
 
 @media (max-width: 991px) {
+  .promises-area {
+    height: auto;
+  }
+
   .promises-cards {
     flex-wrap: wrap;
     height: 100%;
