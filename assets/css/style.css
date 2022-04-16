@@ -436,9 +436,20 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  transform: translateX(-100vw);
+  animation: move 5s linear 1s infinite;
 }
 .cover-area .cover-brands img {
   width: 7%;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(100vw);
+  }
 }
 
 @media (max-width: 991px) {
@@ -498,7 +509,7 @@ label {
   width: 40%;
 }
 
-.welcome-desc {
+.general-desc {
   width: 35%;
   height: 100%;
   display: flex;
@@ -507,7 +518,7 @@ label {
   align-items: center;
 }
 
-.welcome-desc h3 {
+.general-desc h3 {
   width: 100%;
   font-size: 2rem;
   color: var(--lightblue01);
@@ -515,7 +526,7 @@ label {
   margin-top: 1.5rem;
 }
 
-.welcome-desc h2 {
+.general-desc h2 {
   width: 100;
   font-size: 3.5rem;
   color: black;
@@ -523,7 +534,7 @@ label {
   margin-top: 1.5rem;
 }
 
-.welcome-desc p {
+.general-desc p {
   width: 100%;
   color: #747474;
   line-height: 1.5;
@@ -546,23 +557,23 @@ label {
     order: 2;
   }
 
-  .welcome-area .welcome-desc {
+  .welcome-area .general-desc {
     width: 100%;
     height: 30%;
   }
 
-  .welcome-desc h3 {
+  .general-desc h3 {
     width: 100%;
     text-align: center;
   }
 
-  .welcome-desc h2 {
+  .general-desc h2 {
     margin-top: 2rem;
     width: 100%;
     text-align: center;
     font-size: 3.5rem;
   }
-  .welcome-desc p {
+  .general-desc p {
     margin-top: 2rem;
     text-align: center;
     width: 100%;
@@ -598,7 +609,7 @@ label {
     width: 90%;
   }
 
-  .welcome-desc {
+  .general-desc {
     width: 100%;
     height: 50%;
   }
@@ -608,15 +619,15 @@ label {
     height: 65%;
   }
 
-  .welcome-desc h3 {
+  .general-desc h3 {
     font-size: 1.5rem;
   }
 
-  .welcome-desc h2 {
+  .general-desc h2 {
     margin-top: 2rem;
     font-size: 2rem;
   }
-  .welcome-desc p {
+  .general-desc p {
     font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -688,22 +699,22 @@ label {
     margin-top: 2rem;
   }
 
-  .welcome-desc {
+  .general-desc {
     width: 95%;
   }
 
-  .welcome-desc h3 {
+  .general-desc h3 {
     width: 100%;
     text-align: center;
   }
 
-  .welcome-desc h2 {
+  .general-desc h2 {
     margin-top: 2rem;
     width: 100%;
     text-align: center;
     font-size: 3.5rem;
   }
-  .welcome-desc p {
+  .general-desc p {
     margin-top: 2rem;
     text-align: center;
     width: 95%;
@@ -711,7 +722,7 @@ label {
 }
 
 @media (max-width: 575px) {
-  .welcome-desc {
+  .general-desc {
     width: 100%;
     height: 50%;
     margin-bottom: 3rem;
@@ -722,15 +733,15 @@ label {
     height: 65%;
   }
 
-  .welcome-desc h3 {
+  .general-desc h3 {
     font-size: 1.5rem;
   }
 
-  .welcome-desc h2 {
+  .general-desc h2 {
     margin-top: 1.5rem;
     font-size: 2rem;
   }
-  .welcome-desc p {
+  .general-desc p {
     font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -828,17 +839,25 @@ label {
 
   .promises-cards .card {
     width: 100%;
-    height: 30%;
-    padding: 25px;
-    border-radius: 15px;
+    background-color: yellowgreen;
+    margin-bottom: 1.5rem;
+  }
+
+  .promises-cards .card p {
+    height: 160px;
+  }
+  .promises-cards .card h4 {
+    margin-top: 1rem;
   }
 
   .promises-desc h3 {
     text-align: center;
+    margin-bottom: 1rem;
   }
 
   .promises-desc h2 {
     text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -864,3 +883,250 @@ label {
     width: 100%;
   }
 }
+
+/* =========== End promises area ========= */
+
+/* =========== start get the app area ========= */
+.gettheapp-area {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gettheapp-img {
+  width: 45%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.gettheapp-img img {
+  width: 80%;
+}
+
+.gettheapp-desc {
+  width: 45%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.gettheapp-desc p {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.gettheapp-btn a {
+  padding: 0.85rem 2.5rem;
+  background-color: black;
+}
+
+@media (max-width: 991px) {
+  .gettheapp-area {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .gettheapp-desc {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gettheapp-img {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+  }
+
+  .gettheapp-img img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 575px) {
+  .gettheapp-desc {
+    height: 45%;
+  }
+
+  .gettheapp-img img {
+    width: 70%;
+  }
+}
+
+/* =========== End get the app area ========= */
+
+/* ========== start the footer area =========  */
+.footer-area {
+  height: 75vh;
+  background-image: url(../img/clouds.jpeg);
+  margin-top: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-area .h-f-container {
+  padding: 0;
+}
+
+.footer-wrapper {
+  height: 80%;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-app {
+  height: 55%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-app .footer-logo h3 {
+  font-size: 2.3rem;
+  color: white;
+  font-weight: 600;
+}
+
+.footer-app .footer-btn a {
+  margin-top: 3rem;
+  color: black;
+  background-color: white;
+  padding: 0.75rem 2.5rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.footer-app p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: white;
+  width: 75%;
+}
+
+.footer-company {
+  height: 55%;
+  width: 18%;
+}
+
+.footer-ul h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.footer-ul li,
+.footer-ul a {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.footer-beyond {
+  height: 55%;
+  width: 18%;
+}
+
+.footer-social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+
+.footer-social-wrapper h4 {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 300;
+}
+
+.footer-social {
+  width: 10%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social i {
+  color: white;
+  font-size: 1.25rem;
+  transform: scale(1);
+  transition: all 0.2s ease-in;
+}
+
+.footer-social i:hover {
+  transform: scale(1.3);
+}
+
+@media (max-width: 991px) {
+  .footer-area {
+    height: 95vh;
+  }
+  .footer-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer-app {
+    height: 38%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-app p {
+    width: 90%;
+  }
+
+  .footer-company {
+    height: 45%;
+    width: 45%;
+  }
+
+  .footer-beyond {
+    height: 45%;
+    width: 45%;
+  }
+
+  .footer-social-wrapper {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .footer-social {
+    width: 70%;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-social-wrapper h4 {
+    order: 2;
+    text-align: center;
+    width: 75%;
+  }
+
+  .footer-social-wrapper {
+    height: 10%;
+  }
+}
+
+/* ========== End the footer area =========  */
