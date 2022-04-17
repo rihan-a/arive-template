@@ -1137,7 +1137,7 @@ label {
 
 @media (max-width: 575px) {
   .footer-area {
-    height: 150vh;
+    height: 155vh;
   }
 
   .footer-wrapper {
@@ -1146,6 +1146,7 @@ label {
   }
 
   .footer-app {
+    margin-top: 3rem;
     height: 30%;
     text-align: center;
     align-items: center;
