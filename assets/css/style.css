@@ -132,7 +132,7 @@ label {
 
   .header-area .nav-bar .btn {
     position: absolute;
-    top: 42%;
+    top: 82%;
     left: 2.81rem;
     z-index: 999;
   }
@@ -818,13 +818,11 @@ label {
 }
 
 .promises-cards .card p {
-  height: 260px;
   width: 85%;
   color: #747474;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 300;
   font-size: 1.125rem;
-  margin-top: 1.125rem;
 }
 
 @media (max-width: 991px) {
@@ -839,7 +837,7 @@ label {
 
   .promises-cards .card {
     width: 100%;
-    background-color: yellowgreen;
+
     margin-bottom: 1.5rem;
   }
 
@@ -847,7 +845,7 @@ label {
     height: 160px;
   }
   .promises-cards .card h4 {
-    margin-top: 1rem;
+    color: black;
   }
 
   .promises-desc h3 {
@@ -874,7 +872,7 @@ label {
   }
 
   .promises-cards .card {
-    height: 450px;
+    height: 400px;
     padding: 25px;
     margin-bottom: 3rem;
   }
@@ -927,10 +925,10 @@ label {
 
 @media (max-width: 991px) {
   .gettheapp-area {
-    height: 120vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -950,6 +948,7 @@ label {
     justify-content: center;
     align-items: center;
     order: 2;
+    margin-bottom: 5rem;
   }
 
   .gettheapp-img img {
@@ -958,12 +957,19 @@ label {
 }
 
 @media (max-width: 575px) {
+  .gettheapp-area {
+    height: 110vh;
+  }
   .gettheapp-desc {
     height: 45%;
   }
 
   .gettheapp-img img {
     width: 70%;
+  }
+
+  .gettheapp-img {
+    margin-bottom: 0rem;
   }
 }
 
@@ -1080,14 +1086,14 @@ label {
 
 @media (max-width: 991px) {
   .footer-area {
-    height: 95vh;
+    height: 80vh;
   }
   .footer-wrapper {
     flex-wrap: wrap;
   }
 
   .footer-app {
-    height: 38%;
+    height: 28%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1126,6 +1132,38 @@ label {
 
   .footer-social-wrapper {
     height: 10%;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-area {
+    height: 150vh;
+  }
+
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .footer-app {
+    height: 30%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .footer-company {
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 80%;
+    height: 30%;
+  }
+
+  .footer-beyond {
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 80%;
+    height: 30%;
   }
 }
 
